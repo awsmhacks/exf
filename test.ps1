@@ -1,5 +1,5 @@
 $Folder = $HOME + '/Desktop/ImportantDocuments/'
-"Test to see if folder [$Folder]  exists"
+"Test to see if folder [$Folder]  exists - v2"
 if (Test-Path -Path $Folder) {
   $aes = new-object System.Security.Cryptography.AesCryptoServiceProvider; 
   $aes.KeySize = 128; 
